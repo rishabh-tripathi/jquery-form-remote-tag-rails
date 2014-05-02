@@ -1,0 +1,8 @@
+<%= form_remote_tag :url => "form-submit-url",                              
+                    :loading => "alert('loading javascript function');",                     
+                    :complete => "alert('oncomplete javascript function');",                                                                
+                    :failure => "alert('onfailure javascript function');",
+                    :update => "html-element-id-to-update-in-response",                                 
+                    :html => {:id => "html-form-id"}           
+  <input type="hidden" name="paramname" value="values to push to server" />   
+<%= end_form %> 
